@@ -1,0 +1,36 @@
+.wrapper {
+  position: relative;
+  height: 42px;
+  overflow: hidden;
+  &::before{
+    content: '';
+    float: right;
+    height: calc(100% - 21px);
+  }
+}
+.btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  padding: 0 !important;
+  background-color: #fff !important;
+}
+.text{
+  position: relative;
+  clear: both;
+  &::before{
+    content: '. . .';
+    // position: absolute;
+    padding-right: 3px;
+    transform: translateX(-100%);
+  }
+  .btnText{
+    color: #e0b794;
+    cursor: pointer;
+    // margin: 0px 5px;
+  }
+}
+.t{
+  text-align: justify;
+}
